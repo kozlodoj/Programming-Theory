@@ -356,6 +356,8 @@
 "Assets/Scripts/First Enemy.cs"
 "Assets/Scripts/Pistol Bullet.cs"
 "Assets/Scripts/Pistol.cs"
+"Assets/Scripts/Second Enemy.cs"
+"Assets/Scripts/Third Enemy.cs"
 "Assets/Scripts/Weapon.cs"
 -langversion:9.0
 
