@@ -354,6 +354,7 @@
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/First Enemy.cs"
+"Assets/Scripts/Movement Controller.cs"
 "Assets/Scripts/Pistol Bullet.cs"
 "Assets/Scripts/Pistol.cs"
 "Assets/Scripts/Second Enemy.cs"

@@ -68,7 +68,7 @@ public class Enemy : MonoBehaviour
 
         return true;
     }
-
+    //check if direction is UP
     private bool IsDirectionUp (float boundry)
     {
         if (gameObject.transform.position.y > boundry)
