@@ -12,8 +12,8 @@ public class Bullet : MonoBehaviour
 
     public virtual void DealDamage(int damage, GameObject target)
     {
-        target.health -= damage;
-
+        //target.health -= damage;
+        Destroy(gameObject);
     }
 
 }

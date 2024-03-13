@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Pistol : Weapon
 {
-    [SerializeField] bool isAuto = false;
     [SerializeField] GameObject bullet;
     [SerializeField] float coolDown = 1;
 

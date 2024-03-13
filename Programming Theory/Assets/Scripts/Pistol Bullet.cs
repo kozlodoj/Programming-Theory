@@ -28,6 +28,9 @@ public class PistolBullet : Bullet
     private void OnCollisionEnter(Collision collision)
     {
         DealDamage(damage, collision.gameObject);
+}
+    public override void DealDamage(int damage, GameObject target)
+    {
+        base.DealDamage(damage, target);
     }
-
 }
