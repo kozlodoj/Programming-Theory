@@ -351,6 +351,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.20f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.20f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/Auto Rifle.cs"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/First Enemy.cs"
@@ -359,6 +360,7 @@
 "Assets/Scripts/Pistol Bullet.cs"
 "Assets/Scripts/Pistol.cs"
 "Assets/Scripts/Second Enemy.cs"
+"Assets/Scripts/Spawn Manager.cs"
 "Assets/Scripts/Third Enemy.cs"
 "Assets/Scripts/Weapon.cs"
 -langversion:9.0

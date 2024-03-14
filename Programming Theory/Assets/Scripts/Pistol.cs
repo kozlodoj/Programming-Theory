@@ -6,19 +6,13 @@ public class Pistol : Weapon
 {
     [SerializeField] GameObject bullet;
     [SerializeField] float coolDown = 1;
+    private int damage = 10;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            Shoot(transform.position, transform.rotation, 10, bullet, coolDown);
+            Shoot(transform.position, transform.rotation, damage, bullet, coolDown);
 
         }
     }

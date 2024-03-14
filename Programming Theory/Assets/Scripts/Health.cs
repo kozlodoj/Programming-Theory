@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    private int hP = 20;
+    [SerializeField] private int hP = 20;
 
    
     void Update()
@@ -19,5 +19,6 @@ public class Health : MonoBehaviour
     public void GetDamage(int damage)
     {
         hP -= damage;
+        Debug.Log(hP);
     }
 }
