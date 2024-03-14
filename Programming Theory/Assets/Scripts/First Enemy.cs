@@ -11,6 +11,7 @@ public class FirstEnemy : Enemy
 
     void Update()
     {
+        //the movement
         Move(speed, magnitude, boundry, Vector3.right);
     }
 }

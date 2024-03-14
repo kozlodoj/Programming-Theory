@@ -6,17 +6,20 @@ public class Weapon : MonoBehaviour
 {
     private bool canShoot = true;
 
-
+    //shoot mechanic
     public void Shoot(Vector3 position, Quaternion rotation,int damage, GameObject bullet, float coolDown)
     {
+        //check if can shoot
         if (canShoot)
         {
                 Instantiate(bullet, position, rotation);
-                StartCoroutine(CoolDown(coolDown));
+            //start timer to next shot
+            StartCoroutine(CoolDown(coolDown));
         }
 
     }
 
+    //timer for next shot
     private IEnumerator CoolDown (float coolDownTime)
     {
 

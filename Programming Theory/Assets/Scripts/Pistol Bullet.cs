@@ -9,14 +9,16 @@ public class PistolBullet : Bullet
     private float timePassed = 0;
     private int damage = 10;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
+        //fire the bullet
         Fire(speed);
     }
 
     private void Update()
     {
+        //check for life time
         timePassed += Time.deltaTime;
         if (timePassed >= lifeTime)
         {
@@ -24,9 +26,10 @@ public class PistolBullet : Bullet
 
         }
     }
-
+    //collision check
     private void OnCollisionEnter(Collision collision)
     {
+        //deal damage
         DealDamage(damage, collision.gameObject);
         
 }

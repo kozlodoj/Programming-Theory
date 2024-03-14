@@ -13,16 +13,19 @@ public class MovementController : MonoBehaviour
 
     void Update()
     {
+        //get input
         horizontalAxis = Input.GetAxis("Horizontal") * speed;
         verticalAxis = Input.GetAxis("Vertical") * speed;
-
+        //move the camera
         Move(horizontalAxis, verticalAxis);
     }
 
     private void Move(float horizontalAxis, float verticalAxis)
     {
+        //the movement itself
         transform.Translate(horizontalAxis, verticalAxis, 0);
 
+        //check for boundries
         if (transform.position.x > moveBoundX)
         {
             transform.position = new Vector3(moveBoundX, transform.position.y, transform.position.z);
