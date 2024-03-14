@@ -7,7 +7,7 @@ public class PistolBullet : Bullet
     [SerializeField] float speed = 10;
     private float lifeTime = 2f;
     private float timePassed = 0;
-    private int damage;
+    private int damage = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -28,9 +28,8 @@ public class PistolBullet : Bullet
     private void OnCollisionEnter(Collision collision)
     {
         DealDamage(damage, collision.gameObject);
+        
 }
-    public override void DealDamage(int damage, GameObject target)
-    {
-        base.DealDamage(damage, target);
-    }
+
+
 }

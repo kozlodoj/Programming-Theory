@@ -89,4 +89,13 @@ public class Enemy : MonoBehaviour
         return true;
     }
 
+    public void GetDamage(int damage, int hP)
+    {
+        hP -= damage;
+        if (hP <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+    }
 }

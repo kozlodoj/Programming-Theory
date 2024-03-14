@@ -12,8 +12,10 @@ public class Bullet : MonoBehaviour
 
     public virtual void DealDamage(int damage, GameObject target)
     {
-        //target.health -= damage;
-        Destroy(gameObject);
+        if (target.CompareTag("Enemy"))
+         {
+            target.GetComponent<Health>().GetDamage(damage);
+         }
     }
 
 }
