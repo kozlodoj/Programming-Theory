@@ -13,8 +13,11 @@ public class Weapon : MonoBehaviour
         if (canShoot)
         {
                 Instantiate(bullet, position, rotation);
+            gameObject.GetComponent<AmmoScript>().SubtractAmmo();
+            
             //start timer to next shot
             StartCoroutine(CoolDown(coolDown));
+          
         }
 
     }

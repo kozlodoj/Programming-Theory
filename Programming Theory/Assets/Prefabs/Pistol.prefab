@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9151373650374944575}
   - component: {fileID: 3505482982423285849}
+  - component: {fileID: 2734500855921709659}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -46,3 +47,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3973314469871245135, guid: c837b0b02fa114f438905f1d32d8e42f, type: 3}
   coolDown: 1
+--- !u!114 &2734500855921709659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6356742923832938718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3c1ad297c58408692261dc4f1d9f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo: 8
+  reloadTime: 2
+  isReloading: 0

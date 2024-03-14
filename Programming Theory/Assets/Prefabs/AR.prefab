@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3252961335701324097}
   - component: {fileID: 7458958077342791952}
+  - component: {fileID: 6320521133858268644}
   m_Layer: 0
   m_Name: AR
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7652734431419207119}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -46,3 +47,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3973314469871245135, guid: c837b0b02fa114f438905f1d32d8e42f, type: 3}
   coolDown: 0.3
+--- !u!114 &6320521133858268644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7652734431419207119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3c1ad297c58408692261dc4f1d9f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo: 30
+  reloadTime: 4
+  isReloading: 0

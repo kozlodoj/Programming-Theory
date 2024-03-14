@@ -10,10 +10,13 @@ public class Pistol : Weapon
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (!gameObject.GetComponent<AmmoScript>().isReloading)
         {
-            Shoot(transform.position, transform.rotation, damage, bullet, coolDown);
+            if (Input.GetKey(KeyCode.Space))
+            {
+                Shoot(transform.position, transform.rotation, damage, bullet, coolDown);
 
+            }
         }
     }
 }
