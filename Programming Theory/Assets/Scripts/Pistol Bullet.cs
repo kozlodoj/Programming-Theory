@@ -29,6 +29,7 @@ public class PistolBullet : Bullet
     //collision check
     private void OnCollisionEnter(Collision collision)
     {
+        // INHERITANCE
         //deal damage
         DealDamage(damage, collision.gameObject);
         

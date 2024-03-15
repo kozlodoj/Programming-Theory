@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    
     //fire mechanick
     public virtual void Fire(float speed)
     {

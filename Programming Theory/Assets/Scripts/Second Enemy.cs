@@ -12,6 +12,9 @@ public class SecondEnemy : Enemy
    
     void Update()
     {
+
+        // INHERITANCE
+        // POLYMORPHISM
         //the movement
         Move(speed, magnitude, boundry, Vector3.up);
     }

@@ -13,6 +13,7 @@ public class AutoRifle : Weapon
         {
             if (Input.GetKey(KeyCode.Space))
             {
+                // INHERITANCE
                 Shoot(transform.position, transform.rotation, damage, bullet, coolDown);
 
             }

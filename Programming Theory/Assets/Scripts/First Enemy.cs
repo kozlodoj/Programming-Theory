@@ -11,6 +11,8 @@ public class FirstEnemy : Enemy
 
     void Update()
     {
+        // INHERITANCE
+        // POLYMORPHISM
         //the movement
         Move(speed, magnitude, boundry, Vector3.right);
     }

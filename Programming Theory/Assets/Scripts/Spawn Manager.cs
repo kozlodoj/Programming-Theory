@@ -32,12 +32,12 @@ public class SpawnManager : MonoBehaviour
 
         }
     }
-
+    //ABSTRACTION
     private Vector3 RandomPos()
     {
         return new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), Random.Range(0, 5f));
     }
-
+    //ABSTRACTION
     private int RandomNumber(int maxRange)
     {
         return  Random.Range(0, maxRange);
