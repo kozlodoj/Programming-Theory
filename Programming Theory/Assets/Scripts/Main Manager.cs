@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class MainManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private GameObject mainCamera;
+    private UIScript UI;
+
     void Start()
     {
+        mainCamera = GameObject.Find("Main Camera");
+        UI = GameObject.Find("UI").GetComponent<UIScript>();
         setWeapon();
     }
 
@@ -20,7 +24,8 @@ public class MainManager : MonoBehaviour
     {
 
         string weaponName = GameManager.weapon.name;
-        GameObject.Find("Main Camera").transform.Find(weaponName).gameObject.SetActive(true);
+        mainCamera.transform.Find(weaponName).gameObject.SetActive(true);
+        UI.SetWeaponText(weaponName.ToString());
 
     }
 }

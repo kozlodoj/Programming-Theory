@@ -365,6 +365,7 @@
 "Assets/Scripts/Second Enemy.cs"
 "Assets/Scripts/Spawn Manager.cs"
 "Assets/Scripts/Third Enemy.cs"
+"Assets/Scripts/UI Script.cs"
 "Assets/Scripts/Weapon.cs"
 -langversion:9.0
 

@@ -6,7 +6,7 @@ public class MovementController : MonoBehaviour
 {
     private float horizontalAxis;
     private float verticalAxis;
-    private float speed = 0.1f;
+    private float speed = 0.18f;
     private float moveBoundX = 20f;
     private float moveBoundY = 10f;
 

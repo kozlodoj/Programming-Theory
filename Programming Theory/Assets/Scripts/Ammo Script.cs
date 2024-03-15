@@ -8,17 +8,21 @@ public class AmmoScript : Weapon
     private int currentAmmo;
     [SerializeField] float reloadTime = 4f;
     public bool isReloading = false;
+    private UIScript UI;
 
     private void Start()
     {
+        UI = GameObject.Find("UI").GetComponent<UIScript>();
         //set magazine to capacity
         currentAmmo = ammo;
+        UI.SetAmmo(currentAmmo);
     }
 
     //subtract ammo
     public void SubtractAmmo()
     {
         currentAmmo--;
+        UI.SetAmmo(currentAmmo);
         if (currentAmmo <= 0)
         {
             Reloading();
@@ -30,6 +34,7 @@ public class AmmoScript : Weapon
     {
         
             isReloading = true;
+        UI.ReloadingText(isReloading);
             StartCoroutine(ReloadProcess(reloadTime));
         
        
@@ -38,7 +43,9 @@ public class AmmoScript : Weapon
     {
         yield return new WaitForSeconds(reloadTime);
         isReloading = false;
+        UI.ReloadingText(isReloading);
         currentAmmo = ammo;
+        UI.SetAmmo(currentAmmo);
 
     }
 }
